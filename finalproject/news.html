@@ -1,0 +1,66 @@
+<!-- 
+*
+* © Solomon Klein, 2013
+* CS50x, Harvardx University, edX.org
+* news.html
+*
+* HTML file for popup for Media Mirror.
+*
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            <style>
+            title {
+                text-align: center;
+            }
+            </style>
+            Media Mirror
+        </title>
+            <style>
+                body {
+                    width: 400px;
+                    height: 350px;
+                }
+            </style>
+        
+        <!--
+          - JavaScript and HTML must be in separate files: see our Content Security
+          - Policy documentation[1] for details and explanation.
+          -
+          - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+         -->
+         
+        <!-- Include CanvasJS API under non-commercial license.--> 
+        <script src = "canvasjs.js"></script>
+        
+        <!-- Include data and code for rendering the chart.-->
+        <script src="news.js"></script>
+            
+        <h1>
+        <!-- Render chart.-->
+            <div id="chartContainer" style="height: 300px; width: 100%;"/>
+        </h1>
+    </head>
+    <body>
+        <!-- Buttons.-->
+        <h2>
+            <div align="center">
+                <button id="reset">Reset values</button>
+                <button id="homepage">App homepage</button>
+            </div>
+        </h2>
+        <style>
+        h3 {
+            font-size:5%;
+            text-align:right;
+            color:#cdcdcd;
+        }
+        </style>
+        <h3>© Solomon Klein 2013<h3>
+    </body>
+</html>
+
